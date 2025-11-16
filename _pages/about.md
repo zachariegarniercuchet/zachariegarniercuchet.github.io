@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+# subtitle: <a href='https://www.polymtl.ca/'>Polytechnique Montréal</a>. Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: head.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  #more_info: >
+  #  <p>555 your office number</p>
+  #  <p>123 your address street</p>
+  #  <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,20 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi! I'm **Zacharie Garnier-Cuchet**, an AI researcher and M.Sc. student in computer engineering at [Polytechnique Montréal](https://www.polymtl.ca/) and [MILA - Québec AI Institute](https://mila.quebec/en/directory/amal-zouaq), supervised by [Amal Zouaq](https://mila.quebec/en/directory/amal-zouaq) and [Prof. Philippe Langlais](https://www-labs.iro.umontreal.ca/~felipe/brand_new_home/creative-design/public_html/index.php?lg=en).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I began in French engineering schools studying mathematics and physics, but discovering NLP transformed my path entirely. When large language models first emerged, I was captivated by machines capable of coherent reasoning, a moment that reshaped my academic identity and drove me to understand how intelligent systems learn and reason.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+**My research focuses on:**
+
+* **Legal NLP** — Automatic detection and resolution of legal references in judicial decisions, involving structured reasoning, document parsing, and representation learning for complex texts.
+* **Representation & Contrastive Learning** — Building embeddings and semantic models for large-scale text understanding.
+* **Learning Dynamics** — Contributing to optimization research, including a **NeurIPS workshop paper** on loss landscapes and network stability.
+
+I also serve as a **teaching assistant** for NLP at Polytechnique Montréal.
+
+Growing up between **Montréal** and rural **France** taught me how environment shapes thought and values. This awareness now drives my interest in **Trustworthy AI**, **interpretability**, and **alignment**, building transparent models that support democratic values rather than amplify inherited biases.
+
+*How do models acquire internal structure? How can learning systems amplify human insight over bias? How do we build AI for a safer, more equitable society?*
+
+If these questions resonate with you, I'd love to connect. Find my publications and contact information below.

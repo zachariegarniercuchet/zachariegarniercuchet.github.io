@@ -2,31 +2,30 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Zacharie Garnier-Cuchet
     - name: Date of Birth
-      value: 14th March 1879
+      value: 30th April 2002
     - name: Languages
-      value: English, German
+      value: English, French
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Research Master
+      institution: Mila - Quebec AI Institute / Polytechnique Montréal
+      year: 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
+        - Supervised by Prof. Amal Zouaq and Prof. Philippe Langlais
+        - Natural Language Processing, Deep Learning Dynamics.
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: Engineering Degree
+      institution: Université Technologique de Compiègne (UTC), France
+      year: 2020 - 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Mathematics, Physics, Mechanical Engineering.
 
 - title: Experience
   type: time_table
