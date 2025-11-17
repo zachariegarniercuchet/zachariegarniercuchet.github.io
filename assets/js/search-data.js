@@ -391,16 +391,25 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+              window.location.href = "/news/example/";
+            },},{id: "news-i-am-pleased-to-announce-my-admission-to-the-master-s-program-in-artificial-intelligence-at-polytechnique-montréal-looking-forward-to-deepening-my-expertise-in-machine-learning-and-theoretical-ai-research",
+          title: '🎓 I am pleased to announce my admission to the Master’s program in...',
+          description: "",
+          section: "News",},{id: "news-i-won-my-category-18-24-in-the-petit-train-du-nord-marathon-a-great-personal-achievement-and-a-memorable-race",
+          title: '🏅 I won my category (18–24) in the Petit Train du Nord marathon!...',
+          description: "",
+          section: "News",},{id: "news-i-am-excited-to-begin-my-nlp-research-under-the-supervision-of-professor-amal-zouaq-polytechnique-montréal-and-professor-philippe-langlais-université-de-montréal-my-work-will-focus-on-knowledge-extraction-language-models-and-robust-nlp-systems",
+          title: '🔬 I am excited to begin my NLP research under the supervision of...',
+          description: "",
+          section: "News",},{id: "news-our-paper-revisiting-the-goldilocks-zone-has-been-accepted-to-the-neurips-workshop-excited-to-share-new-insights-on-curvature-initialization-and-trainability-in-modern-neural-architectures",
+          title: '🎉 Our paper “Revisiting the Goldilocks Zone” has been accepted to the NeurIPS...',
+          description: "",
+          section: "News",},{id: "news-i-am-happy-to-serve-as-a-teaching-assistant-for-the-natural-language-processing-course-at-polytechnique-montréal-excited-to-support-students-and-contribute-to-the-teaching-team",
+          title: '📘 I am happy to serve as a Teaching Assistant for the Natural...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
