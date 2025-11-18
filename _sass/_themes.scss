@@ -67,12 +67,20 @@
 
   #back-to-top {
     color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
+    background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
     bottom: $back-to-top-bottom;
     right: $back-to-top-right;
     height: $back-to-top-height;
     width: $back-to-top-width;
     z-index: $back-to-top-z-index;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
@@ -140,7 +148,12 @@ html[data-theme-setting="dark"] {
 
   #back-to-top {
     color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
+    background: linear-gradient(135deg, var(--global-theme-color), var(--global-hover-color));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    
+    &:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
   }
 }
 

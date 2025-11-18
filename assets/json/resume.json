@@ -28,7 +28,7 @@
       "area": "Artificial Intelligence",
       "studyType": "Master",
       "startDate": "2024-09-01",
-      "endDate": "Present",
+      "endDate": "",
       "score": "4.0/4.0",
       "courses": ["Natural Language Processing", "Deep Learning Dynamics", "Reinforcement Learning", "Representation Learning", "Stochastic Processes", "Data Science"]
     },

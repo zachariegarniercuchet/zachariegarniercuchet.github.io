@@ -1,12 +1,14 @@
 .typogram {
   .diagram {
     display: block;
+    transition: all 0.3s ease;
   }
 
   .diagram line,
   .diagram circle,
   .diagram rect {
     stroke: var(--global-text-color);
+    transition: all 0.3s ease;
   }
 
   .diagram line {
@@ -25,10 +27,7 @@
   .diagram text,
   .glyph,
   .debug text {
-    /** font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; **/
-    font-family:
-      Iosevka Fixed,
-      monospace;
+    font-family: $monospace-font-family, 'Iosevka Fixed', 'Consolas', 'Monaco', monospace;
     font-size: 3em;
     text-anchor: middle;
     alignment-baseline: central;
