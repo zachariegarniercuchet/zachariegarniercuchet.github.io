@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm **Zacharie Garnier-Cuchet**, an AI researcher and M.Sc. student in computer engineering at [Polytechnique Montréal](https://www.polymtl.ca/) and [MILA - Québec AI Institute](https://mila.quebec/en), supervised by [Amal Zouaq](https://mila.quebec/en/directory/amal-zouaq) and [Prof. Philippe Langlais](https://www-labs.iro.umontreal.ca/~felipe/brand_new_home/creative-design/public_html/index.php?lg=en).
+Hi! I'm **Zacharie Garnier-Cuchet**, an AI researcher and M.Sc. student in computer engineering at [Polytechnique Montréal](https://www.polymtl.ca/) and [MILA - Québec AI Institute](https://mila.quebec/en), supervised by [Prof. Amal Zouaq](https://mila.quebec/en/directory/amal-zouaq) and [Prof. Philippe Langlais](https://www-labs.iro.umontreal.ca/~felipe/brand_new_home/creative-design/public_html/index.php?lg=en).
 
 I began in French engineering schools studying mathematics and physics, but discovering NLP transformed my path entirely. When large language models first emerged, I was captivated by machines capable of coherent reasoning, a moment that reshaped my academic identity and drove me to understand how intelligent systems learn and reason.
 
