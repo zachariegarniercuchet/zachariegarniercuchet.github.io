@@ -35,7 +35,7 @@ I began in French engineering schools studying mathematics and physics, but disc
 
 * **Legal NLP** — Automatic detection and resolution of legal references in judicial decisions, involving structured reasoning, document parsing, and representation learning for complex texts.
 * **Representation & Contrastive Learning** — Building embeddings and semantic models for large-scale text understanding.
-* **Learning Dynamics** — Contributing to optimization research, including a **NeurIPS workshop paper** on loss landscapes and network stability.
+* **Learning Dynamics** — Contributing to optimization research, including a **ICML workshop paper** on loss landscapes and network stability.
 
 I also serve as a **teaching assistant** for NLP at Polytechnique Montréal.
 
