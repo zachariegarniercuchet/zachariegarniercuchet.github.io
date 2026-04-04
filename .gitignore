@@ -12,8 +12,9 @@ node_modules/
 vendor
 .idea
 
-_projects
 _posts
 _books
+
+private
 
 Ubuntu_helper.txt

@@ -1,0 +1,388 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --wl-green: #538d4e;
+  --wl-yellow: #b59f3b;
+  --wl-dark: #3a3a3c;
+  --tile-size: 44px;
+}
+
+.wl-page * { box-sizing: border-box; }
+
+.wl-page {
+  font-family: 'DM Sans', sans-serif;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+/* Hero */
+.wl-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.wl-grid {
+  display: grid;
+  grid-template-rows: repeat(4, var(--tile-size));
+  grid-template-columns: repeat(5, var(--tile-size));
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.wl-tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Mono', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  animation: wl-flip 0.4s ease both;
+}
+.wl-tile.green  { background: var(--wl-green); }
+.wl-tile.yellow { background: var(--wl-yellow); }
+.wl-tile.dark   { background: var(--wl-dark); }
+.wl-tile.empty  { background: transparent; border: 1.5px solid #ccc; color: transparent; }
+
+@keyframes wl-flip {
+  from { transform: scaleY(0); opacity: 0; }
+  to   { transform: scaleY(1); opacity: 1; }
+}
+.wl-tile:nth-child(1)  { animation-delay: 0.05s; }
+.wl-tile:nth-child(2)  { animation-delay: 0.10s; }
+.wl-tile:nth-child(3)  { animation-delay: 0.15s; }
+.wl-tile:nth-child(4)  { animation-delay: 0.20s; }
+.wl-tile:nth-child(5)  { animation-delay: 0.25s; }
+.wl-tile:nth-child(6)  { animation-delay: 0.35s; }
+.wl-tile:nth-child(7)  { animation-delay: 0.40s; }
+.wl-tile:nth-child(8)  { animation-delay: 0.45s; }
+.wl-tile:nth-child(9)  { animation-delay: 0.50s; }
+.wl-tile:nth-child(10) { animation-delay: 0.55s; }
+.wl-tile:nth-child(11) { animation-delay: 0.65s; }
+.wl-tile:nth-child(12) { animation-delay: 0.70s; }
+.wl-tile:nth-child(13) { animation-delay: 0.75s; }
+.wl-tile:nth-child(14) { animation-delay: 0.80s; }
+.wl-tile:nth-child(15) { animation-delay: 0.85s; }
+.wl-tile:nth-child(16) { animation-delay: 0.95s; }
+.wl-tile:nth-child(17) { animation-delay: 1.00s; }
+.wl-tile:nth-child(18) { animation-delay: 1.05s; }
+.wl-tile:nth-child(19) { animation-delay: 1.10s; }
+.wl-tile:nth-child(20) { animation-delay: 1.15s; }
+
+.wl-tag {
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin-bottom: 12px;
+}
+
+.wl-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 10px;
+}
+
+.wl-subtitle {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.65;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Divider */
+.wl-divider {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 2rem 0;
+}
+
+/* Story blocks */
+.wl-story {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.wl-story::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 4px; bottom: 4px;
+  width: 2px;
+  background: #ddd;
+  border-radius: 2px;
+}
+.wl-story p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #444;
+  margin: 0;
+}
+.wl-story .hl { color: #111; font-weight: 500; }
+.wl-story a { color: #538d4e; }
+
+/* Info banner */
+.wl-banner {
+  background: #f7f7f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 1.75rem 0;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.wl-banner-icon {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: var(--wl-green);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; margin-top: 1px;
+}
+.wl-banner-icon svg { width: 11px; height: 11px; }
+.wl-banner p { font-size: 13.5px; line-height: 1.65; color: #555; margin: 0; }
+.wl-banner p strong { color: #111; font-weight: 500; }
+
+/* Section label */
+.wl-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Math */
+.wl-math { margin: 1.75rem 0; }
+.wl-math > p { font-size: 15px; line-height: 1.75; color: #444; margin-bottom: 1rem; }
+
+.wl-formula {
+  background: #f7f7f5;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  color: #111;
+  margin: 0.75rem 0;
+  line-height: 1.7;
+}
+.wl-formula .cmt { color: #888; font-size: 12px; }
+
+.wl-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.wl-step {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+.wl-step-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 6px;
+}
+.wl-step p { font-size: 13px; color: #555; line-height: 1.55; margin: 0; }
+.wl-step p strong { color: #111; font-weight: 500; }
+
+/* CTA */
+.wl-cta { margin-top: 2rem; }
+.wl-cta h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 0.5rem;
+}
+.wl-cta > p { font-size: 14px; color: #555; margin-bottom: 1.25rem; line-height: 1.65; }
+
+.wl-btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 1.5rem; }
+
+.wl-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #111;
+  transition: background 0.15s;
+}
+.wl-btn:hover { background: #f5f5f5; text-decoration: none; }
+.wl-btn.primary {
+  background: var(--wl-green);
+  color: #fff;
+  border-color: var(--wl-green);
+}
+.wl-btn.primary:hover { background: #3f6e3b; border-color: #3f6e3b; }
+
+/* iframe embed */
+.wl-frame-wrap {
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 1.25rem;
+  background: #f7f7f5;
+}
+.wl-frame-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.wl-dot { width: 10px; height: 10px; border-radius: 50%; }
+.wl-dot.r { background: #ff5f57; }
+.wl-dot.y { background: #ffbd2e; }
+.wl-dot.g { background: #28c840; }
+.wl-frame-url {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: #888;
+  margin-left: 4px;
+}
+.wl-frame-wrap iframe {
+  width: 100%;
+  height: 520px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .wl-hero { flex-direction: column; gap: 1.5rem; }
+  .wl-steps { grid-template-columns: 1fr; }
+}
+</style>
+
+<div class="wl-page">
+
+  <!-- Hero -->
+  <div class="wl-hero">
+    <div class="wl-grid">
+      <div class="wl-tile dark">E</div><div class="wl-tile dark">N</div><div class="wl-tile yellow">T</div><div class="wl-tile dark">R</div><div class="wl-tile dark">O</div>
+      <div class="wl-tile dark">S</div><div class="wl-tile green">A</div><div class="wl-tile dark">I</div><div class="wl-tile yellow">N</div><div class="wl-tile dark">E</div>
+      <div class="wl-tile green">M</div><div class="wl-tile green">A</div><div class="wl-tile green">T</div><div class="wl-tile green">H</div><div class="wl-tile green">S</div>
+      <div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div>
+    </div>
+    <div>
+      <div class="wl-tag">Information Theory · NLP · Game AI</div>
+      <h2 class="wl-title">Wordle Solver<br><em>via Shannon Entropy</em></h2>
+      <p class="wl-subtitle">An optimal solver for French &amp; English Wordle variants, written in Python — with an interactive webapp to test it in-browser. No install required.</p>
+    </div>
+  </div>
+
+  <hr class="wl-divider">
+
+  <!-- Story -->
+  <div class="wl-story">
+    <p>I was <span class="hl">19, turning 20 in Berlin</span>, on an exchange semester at the <span class="hl">Technische Universität Berlin</span> in mechanical engineering. Wordle had just gone viral, and in my free time — entirely without LLMs, entirely by hand — I built this solver from scratch. It started as a simple question: <em>what is actually the best first guess?</em> It ended as a proper information-theoretic engine.</p>
+  </div>
+
+  <div class="wl-story">
+    <p>At the time I had to choose my path. I had been torn between mechanics, physics, and computing. I joined the mechanical engineering track for the following year — but eventually followed the pull toward language and computation, and enrolled as a <span class="hl">computer science master's student in NLP at Polytechnique Montréal</span>, one of Canada's leading engineering research schools.</p>
+  </div>
+
+  <div class="wl-story">
+    <p>The webapp you see below was built recently, in <span class="hl">under an hour with LLMs</span>. A solver I spent weeks crafting finally has a proper interface to show for itself. You can also browse the full source on <a href="https://github.com/zachariegarniercuchet/Wordle">GitHub →</a></p>
+  </div>
+
+  <div class="wl-banner">
+    <div class="wl-banner-icon">
+      <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 2v4M6 8.5v.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <p><strong>Try it before reading the math.</strong> Play a round, let the solver suggest its next guess, and watch how each turn strips away possibilities. The theory will make a lot more sense once you have felt it work.</p>
+  </div>
+
+  <hr class="wl-divider">
+
+  <!-- Math section -->
+  <div class="wl-math">
+    <div class="wl-label">How it works</div>
+    <p>Each guess is chosen to maximize <strong>expected information gain</strong> — formally, the Shannon entropy of the feedback distribution over remaining candidate words.</p>
+
+    <div class="wl-formula">
+      H(X) = −Σ P(xᵢ) · log₂ P(xᵢ)<br>
+      <span class="cmt">// expected uncertainty across all remaining words</span>
+    </div>
+
+    <div class="wl-formula">
+      g* = argmax E[I(g)] = argmax Σ P(r|g) · log₂(|A| / |Aᵣ|)<br>
+      <span class="cmt">// pick the guess that partitions the answer space most evenly</span>
+    </div>
+
+    <div class="wl-steps">
+      <div class="wl-step">
+        <div class="wl-step-num">01 — feedback</div>
+        <p>Each letter gets a ternary signal: <strong>green</strong> (right place), <strong>yellow</strong> (wrong place), <strong>gray</strong> (absent). Up to 3⁵ = 243 possible patterns per guess.</p>
+      </div>
+      <div class="wl-step">
+        <div class="wl-step-num">02 — partition</div>
+        <p>Words are grouped by which feedback pattern they would produce. The solver picks the guess that makes those groups as <strong>equally sized</strong> as possible — maximizing information.</p>
+      </div>
+      <div class="wl-step">
+        <div class="wl-step-num">03 — heuristics</div>
+        <p>For 7–9 letter words, brute force is too slow. <strong>Positional letter frequency</strong> prunes the candidate set while losing less than 2% of information gain.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="wl-divider">
+
+  <!-- CTA + embed -->
+  <div class="wl-cta">
+    <h3>Try the solver — zero install</h3>
+    <p>Play French Wordle (Motus / Sutom), English Wordle, or the Sutom variant with revealed first letter. The solver tells you the highest-entropy guess at every step. Stop struggling with five-letter words.</p>
+    <div class="wl-btn-row">
+      <a class="wl-btn primary" href="https://wordle.louan.me/" target="_blank">Jouer en français ↗</a>
+      <a class="wl-btn" href="https://sutom.nocle.fr/" target="_blank">Sutom ↗</a>
+      <a class="wl-btn" href="https://github.com/zachariegarniercuchet/Wordle" target="_blank">GitHub ↗</a>
+    </div>
+
+    <div class="wl-frame-wrap">
+      <div class="wl-frame-bar">
+        <div class="wl-dot r"></div>
+        <div class="wl-dot y"></div>
+        <div class="wl-dot g"></div>
+        <span class="wl-frame-url">Motus Solver — Zero Install</span>
+      </div>
+      <!-- Replace the src below with your deployed solver URL -->
+      <iframe
+        src="https://zachariegarniercuchet.github.io/Wordle/"
+        title="Motus Solver"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+</div>
