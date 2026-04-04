@@ -272,7 +272,7 @@
 }
 .wl-frame-wrap iframe {
   width: 100%;
-  height: 520px;
+  height: clamp(520px, 68vh, 760px);
   border: none;
   display: block;
 }
@@ -280,40 +280,81 @@
 @media (max-width: 600px) {
   .wl-hero { flex-direction: column; gap: 1.5rem; }
   .wl-steps { grid-template-columns: 1fr; }
+  .wl-frame-wrap iframe {
+    width: 100%;
+    height: 520px;
+  }
 }
 </style>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']],
+      displayMath: [['\\[', '\\]']]
+    }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 <div class="wl-page">
 
   <!-- Hero -->
   <div class="wl-hero">
     <div class="wl-grid">
-      <div class="wl-tile dark">E</div><div class="wl-tile dark">N</div><div class="wl-tile yellow">T</div><div class="wl-tile dark">R</div><div class="wl-tile dark">O</div>
-      <div class="wl-tile dark">S</div><div class="wl-tile green">A</div><div class="wl-tile dark">I</div><div class="wl-tile yellow">N</div><div class="wl-tile dark">E</div>
+      <div class="wl-tile dark">R</div><div class="wl-tile dark">E</div><div class="wl-tile yellow">A</div><div class="wl-tile dark">L</div><div class="wl-tile green">S</div>
+      <div class="wl-tile dark">G</div><div class="wl-tile green">A</div><div class="wl-tile dark">I</div><div class="wl-tile dark">N</div><div class="wl-tile green">S</div>
       <div class="wl-tile green">M</div><div class="wl-tile green">A</div><div class="wl-tile green">T</div><div class="wl-tile green">H</div><div class="wl-tile green">S</div>
       <div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div><div class="wl-tile empty">·</div>
     </div>
     <div>
       <div class="wl-tag">Information Theory · NLP · Game AI</div>
       <h2 class="wl-title">Wordle Solver<br><em>via Shannon Entropy</em></h2>
-      <p class="wl-subtitle">An optimal solver for French &amp; English Wordle variants, written in Python — with an interactive webapp to test it in-browser. No install required.</p>
+      <p class="wl-subtitle">An optimal solver for French &amp; English Wordle variants, written in Python — with an interactive webapp to test it in-browser.</p>
+    </div>
+  </div>
+
+  <hr class="wl-divider">
+
+  <!-- CTA + embed -->
+  <div class="wl-cta">
+    <h3>Try the solver — zero install</h3>
+    <p>Play French Wordle or English Wordle. The solver tells you the highest-entropy guess at every step. Stop struggling with five-letter words.</p>
+    <div class="wl-btn-row">
+      <a class="wl-btn primary" href="https://wordly.org/" target="_blank">Jouer en français ↗</a>
+      <a class="wl-btn" href="https://wordly.org/" target="_blank">Play in English ↗</a>
+      <a class="wl-btn" href="https://zachariegarniercuchet.github.io/Wordle/" target="_blank">Full App ↗</a>
+    </div>
+
+    <div class="wl-frame-wrap">
+      <div class="wl-frame-bar">
+        <div class="wl-dot r"></div>
+        <div class="wl-dot y"></div>
+        <div class="wl-dot g"></div>
+        <span class="wl-frame-url">Wordle Solver — Zero Install</span>
+      </div>
+      <!-- Replace the src below with your deployed solver URL -->
+      <iframe
+        src="https://zachariegarniercuchet.github.io/Wordle/"
+        title="Wordle Solver"
+        loading="lazy">
+      </iframe>
     </div>
   </div>
 
   <hr class="wl-divider">
 
   <!-- Story -->
-  <div class="wl-story">
-    <p>I was <span class="hl">19, turning 20 in Berlin</span>, on an exchange semester at the <span class="hl">Technische Universität Berlin</span> in mechanical engineering. Wordle had just gone viral, and in my free time — entirely without LLMs, entirely by hand — I built this solver from scratch. It started as a simple question: <em>what is actually the best first guess?</em> It ended as a proper information-theoretic engine.</p>
-  </div>
+    <div class="wl-story">
+    <p>I built my first Wordle solver while I was an <span class="hl">exchange student in Berlin</span>, with plenty of free time and just some basic Python skills. This was the <span class="hl">pre-LLM era</span> — so everything was done the hard (and fun) way.</p>
+    </div>
 
-  <div class="wl-story">
-    <p>At the time I had to choose my path. I had been torn between mechanics, physics, and computing. I joined the mechanical engineering track for the following year — but eventually followed the pull toward language and computation, and enrolled as a <span class="hl">computer science master's student in NLP at Polytechnique Montréal</span>, one of Canada's leading engineering research schools.</p>
-  </div>
+    <div class="wl-story">
+    <p>At the time, I was studying mechanical engineering, and I continued in that direction for a while. But later on, I followed my interest in computation and language, and joined a <span class="hl">master’s in computer science (NLP) at Polytechnique Montréal</span>.</p>
+    </div>
 
-  <div class="wl-story">
-    <p>The webapp you see below was built recently, in <span class="hl">under an hour with LLMs</span>. A solver I spent weeks crafting finally has a proper interface to show for itself. You can also browse the full source on <a href="https://github.com/zachariegarniercuchet/Wordle">GitHub →</a></p>
-  </div>
+    <div class="wl-story">
+    <p>Now, things look a bit different. The web app you see below was built in <span class="hl">under an hour using LLMs</span>. Same idea — just a much faster way to bring it to life.</p>
+    </div>
 
   <div class="wl-banner">
     <div class="wl-banner-icon">
@@ -327,62 +368,60 @@
   <hr class="wl-divider">
 
   <!-- Math section -->
-  <div class="wl-math">
+    <div class="wl-math">
     <div class="wl-label">How it works</div>
-    <p>Each guess is chosen to maximize <strong>expected information gain</strong> — formally, the Shannon entropy of the feedback distribution over remaining candidate words.</p>
+
+    <p>
+        Each guess is chosen to maximize <strong>expected information gain</strong> —
+        formally, the Shannon entropy of the feedback distribution over remaining candidate words.
+    </p>
 
     <div class="wl-formula">
-      H(X) = −Σ P(xᵢ) · log₂ P(xᵢ)<br>
-      <span class="cmt">// expected uncertainty across all remaining words</span>
+        \[
+        H(X) = - \sum_{i} P(x_i)\,\log_2 P(x_i)
+        \]
+        <span class="cmt">// expected uncertainty across all remaining words</span>
     </div>
 
     <div class="wl-formula">
-      g* = argmax E[I(g)] = argmax Σ P(r|g) · log₂(|A| / |Aᵣ|)<br>
-      <span class="cmt">// pick the guess that partitions the answer space most evenly</span>
+        \[
+        g^* = \arg\max_{g} \mathbb{E}[I(g)] = \arg\max_{g} \sum_{r} P(r \mid g)\,\log_2\!\left(\frac{|A|}{|A_r|}\right)
+        \]
+        <span class="cmt">// pick the guess that partitions the answer space most evenly</span>
     </div>
 
     <div class="wl-steps">
-      <div class="wl-step">
+        <div class="wl-step">
         <div class="wl-step-num">01 — feedback</div>
-        <p>Each letter gets a ternary signal: <strong>green</strong> (right place), <strong>yellow</strong> (wrong place), <strong>gray</strong> (absent). Up to 3⁵ = 243 possible patterns per guess.</p>
-      </div>
-      <div class="wl-step">
+        <p>
+            Each letter gets a ternary signal: <strong>green</strong> (right place),
+            <strong>yellow</strong> (wrong place), <strong>gray</strong> (absent).
+            Up to \(3^5 = 243\) possible patterns per guess.
+        </p>
+        </div>
+
+        <div class="wl-step">
         <div class="wl-step-num">02 — partition</div>
-        <p>Words are grouped by which feedback pattern they would produce. The solver picks the guess that makes those groups as <strong>equally sized</strong> as possible — maximizing information.</p>
-      </div>
-      <div class="wl-step">
+        <p>
+            Words are grouped by which feedback pattern they would produce.
+            The solver picks the guess that makes those groups as
+            <strong>equally sized</strong> as possible — maximizing information.
+        </p>
+        </div>
+
+        <div class="wl-step">
         <div class="wl-step-num">03 — heuristics</div>
-        <p>For 7–9 letter words, brute force is too slow. <strong>Positional letter frequency</strong> prunes the candidate set while losing less than 2% of information gain.</p>
-      </div>
+        <p>
+            For 7–9 letter words, brute force is too slow.
+            <strong>Positional letter frequency</strong> prunes the candidate set
+            while losing less than 2% of information gain.
+        </p>
+        </div>
     </div>
-  </div>
+    </div>
 
   <hr class="wl-divider">
 
-  <!-- CTA + embed -->
-  <div class="wl-cta">
-    <h3>Try the solver — zero install</h3>
-    <p>Play French Wordle (Motus / Sutom), English Wordle, or the Sutom variant with revealed first letter. The solver tells you the highest-entropy guess at every step. Stop struggling with five-letter words.</p>
-    <div class="wl-btn-row">
-      <a class="wl-btn primary" href="https://wordle.louan.me/" target="_blank">Jouer en français ↗</a>
-      <a class="wl-btn" href="https://sutom.nocle.fr/" target="_blank">Sutom ↗</a>
-      <a class="wl-btn" href="https://github.com/zachariegarniercuchet/Wordle" target="_blank">GitHub ↗</a>
-    </div>
-
-    <div class="wl-frame-wrap">
-      <div class="wl-frame-bar">
-        <div class="wl-dot r"></div>
-        <div class="wl-dot y"></div>
-        <div class="wl-dot g"></div>
-        <span class="wl-frame-url">Motus Solver — Zero Install</span>
-      </div>
-      <!-- Replace the src below with your deployed solver URL -->
-      <iframe
-        src="https://zachariegarniercuchet.github.io/Wordle/"
-        title="Motus Solver"
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
+  
 
 </div>
