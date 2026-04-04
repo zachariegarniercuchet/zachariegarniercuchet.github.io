@@ -16,6 +16,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-projects",
+          title: "Projects",
+          description: "A growing collection of my cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
         },{id: "nav-cv",
           title: "cv",
           description: "Concise overview of my academic background and research activities.",
@@ -41,7 +48,12 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-serving-as-a-teaching-assistant-for-inf3710-in-summer-2026-files-and-databases",
           title: '📘 I am serving as a Teaching Assistant for INF3710 in Summer 2026...',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "projects-wordle-solver",
+          title: 'Wordle Solver',
+          description: "An information-theoretic Wordle solver using Shannon entropy — built in Berlin, deployed in Montreal.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/1_project/";
+            },},{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
