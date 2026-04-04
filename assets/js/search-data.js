@@ -38,6 +38,9 @@ ninja.data = [{
           section: "News",},{id: "news-i-am-happy-to-serve-as-a-teaching-assistant-for-the-natural-language-processing-course-at-polytechnique-montréal-excited-to-support-students-and-contribute-to-the-teaching-team",
           title: '📘 I am happy to serve as a Teaching Assistant for the Natural...',
           description: "",
+          section: "News",},{id: "news-i-am-serving-as-a-teaching-assistant-for-inf3710-in-summer-2026-files-and-databases",
+          title: '📘 I am serving as a Teaching Assistant for INF3710 in Summer 2026...',
+          description: "",
           section: "News",},{
         id: 'social-scholar',
         title: 'Google Scholar',
