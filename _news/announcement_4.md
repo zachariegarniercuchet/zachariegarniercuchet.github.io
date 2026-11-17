@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-🏅 I won my category (18–24) in the *Petit Train du Nord* marathon!  
+🏅 I won my category (18–24) in the _Petit Train du Nord_ marathon!  
 A great personal achievement and a memorable race.

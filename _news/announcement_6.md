@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-📘 I am serving as a Teaching Assistant for **INF3710** in Summer 2026 (*Files and databases*).
+📘 I am serving as a Teaching Assistant for **INF3710** in Summer 2026 (_Files and databases_).

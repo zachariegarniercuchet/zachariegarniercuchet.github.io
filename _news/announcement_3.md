@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper *"Revisiting the Goldilocks Zone"* has been accepted to the NeurIPS Workshop!  
+🎉 Our paper _"Revisiting the Goldilocks Zone"_ has been accepted to the NeurIPS Workshop!  
 Excited to share new insights on curvature, initialization, and trainability in modern neural architectures.

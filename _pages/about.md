@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 announcements:
   enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit:  # leave blank to include all the news in the `_news` folder
+  limit: # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
@@ -33,14 +33,14 @@ I began in French engineering schools studying mathematics and physics, but disc
 
 **My research focuses on:**
 
-* **Legal NLP** — Automatic detection and resolution of legal references in judicial decisions, involving structured reasoning, document parsing, and representation learning for complex texts.
-* **Representation & Contrastive Learning** — Building embeddings and semantic models for large-scale text understanding.
-* **Learning Dynamics** — Contributing to optimization research, including a **ICML workshop paper** on loss landscapes and network stability.
+- **Legal NLP** — Automatic detection and resolution of legal references in judicial decisions, involving structured reasoning, document parsing, and representation learning for complex texts.
+- **Representation & Contrastive Learning** — Building embeddings and semantic models for large-scale text understanding.
+- **Learning Dynamics** — Contributing to optimization research, including a **ICML workshop paper** on loss landscapes and network stability.
 
 I also serve as a **teaching assistant** for NLP at Polytechnique Montréal.
 
 Growing up between **Montréal** and rural **France** taught me how environment shapes thought and values. This awareness now drives my interest in **Trustworthy AI**, **interpretability**, and **alignment**, building transparent models that support democratic values rather than amplify inherited biases.
 
-*How do models acquire internal structure? How can learning systems amplify human insight over bias? How do we build AI for a safer, more equitable society?*
+_How do models acquire internal structure? How can learning systems amplify human insight over bias? How do we build AI for a safer, more equitable society?_
 
 If these questions resonate with you, I'd love to connect. Find my publications and contact information below.

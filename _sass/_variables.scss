@@ -38,9 +38,9 @@ $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
 
 // Typography - LaTeX-inspired fonts
-$serif-font-family: 'Latin Modern Roman', 'Computer Modern Serif', 'Libertinus Serif', 'Charter', 'Georgia', serif !default;
-$sans-serif-font-family: 'Latin Modern Sans', 'Computer Modern Sans', 'Libertinus Sans', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif !default;
-$monospace-font-family: 'Latin Modern Mono', 'Computer Modern Typewriter', 'Inconsolata', 'Monaco', 'Courier New', monospace !default;
+$serif-font-family: "Latin Modern Roman", "Computer Modern Serif", "Libertinus Serif", "Charter", "Georgia", serif !default;
+$sans-serif-font-family: "Latin Modern Sans", "Computer Modern Sans", "Libertinus Sans", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif !default;
+$monospace-font-family: "Latin Modern Mono", "Computer Modern Typewriter", "Inconsolata", "Monaco", "Courier New", monospace !default;
 $body-font-family: $serif-font-family !default;
 $heading-font-family: $serif-font-family !default;
 

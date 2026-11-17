@@ -30,7 +30,14 @@
       "startDate": "2024-09-01",
       "endDate": "",
       "score": "4.0/4.0",
-      "courses": ["Natural Language Processing", "Deep Learning Dynamics", "Reinforcement Learning", "Representation Learning", "Stochastic Processes", "Data Science"]
+      "courses": [
+        "Natural Language Processing",
+        "Deep Learning Dynamics",
+        "Reinforcement Learning",
+        "Representation Learning",
+        "Stochastic Processes",
+        "Data Science"
+      ]
     },
     {
       "institution": "Université Technologique de Compiègne (UTC) / Sorbonne University Alliance",
@@ -110,11 +117,16 @@
     {
       "name": "Dynamic Analysis of Taipei 101",
       "summary": "The project investigates the dynamic behaviour of the Taipei 101 tower through a theoretical and model-driven approach. Using finite element abstractions and Rayleigh–Ritz formulations, it examines natural vibration modes, modal frequencies, and the impact of passive absorbers. The work emphasizes structural modelling, eigenvalue analysis, and the interpretation of complex dynamical responses using computational tools.",
-      "highlights": ["Structural Modelling", "Eigenvalue & Modal Analysis", "Rayleigh–Ritz Method", "Dynamic Systems Interpretation", "Computational Simulation"],
+      "highlights": [
+        "Structural Modelling",
+        "Eigenvalue & Modal Analysis",
+        "Rayleigh–Ritz Method",
+        "Dynamic Systems Interpretation",
+        "Computational Simulation"
+      ],
       "startDate": "2024-03-01",
       "endDate": "2024-08-01",
       "url": "https://drive.google.com/drive/folders/1lUWrcElmgWipY1RckW2SP8MAWHsDWG72?usp=sharing"
     }
-
   ]
 }
